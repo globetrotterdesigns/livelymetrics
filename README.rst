@@ -92,6 +92,7 @@ For Nginx running on Ubuntu.
 
 apt-get install nginx
 apt-get install uwsgi
+apt-get install uwsgi-plugin-python
 
 Create uwsgi ini file and nginx virtualhost based on the provided in the folder: server-config
 
