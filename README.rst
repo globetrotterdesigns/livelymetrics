@@ -84,4 +84,17 @@ For production::
     $ pip install -r requirements.txt
 
 *note: We install production requirements this way because many Platforms as a
-Services expect a requirements.txt file in the root of projects.*
+Services expects a requirements.txt file in the root of projects.*
+
+Server Configuration
+====================
+
+For Nginx running on Ubuntu.
+
+apt-get install nginx
+apt-get install uwsgi
+
+Create uwsgi ini file and nginx virtualhost based on the provided in the folder: server-config
+
+service uwsgi start
+service nginx start
