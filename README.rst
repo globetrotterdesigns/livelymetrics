@@ -6,12 +6,11 @@ To use this project follow these steps:
 
 #. Create your working environment
 #. Install Django
-#. Create the new project using the django-two-scoops template
+#. Clone the project from this repository
 #. Install additional dependencies
 #. Use the Django admin to create the project
 
-*note: these instructions show creation of a project called "icecream".  You
-should replace this name with the actual name of your project.*
+
 
 Working Environment
 ===================
@@ -26,7 +25,7 @@ Virtualenv Only
 First, make sure you are using virtualenv (http://www.virtualenv.org). Once
 that's installed, create your virtualenv::
 
-    $ virtualenv --distribute icecream
+    $ virtualenv --distribute livelymetrics
 
 You will also need to ensure that the virtualenv has the project directory
 added to the path. Adding the project directory will allow `django-admin.py` to
@@ -39,9 +38,9 @@ In Linux and Mac OSX, you can install virtualenvwrapper (http://virtualenvwrappe
 which will take care of managing your virtual environments and adding the
 project path to the `site-directory` for you::
 
-    $ mkdir icecream
-    $ mkvirtualenv -a icecream icecream-dev
-    $ cd icecream && add2virtualenv `pwd`
+    $ mkdir livelymetrics
+    $ mkvirtualenv -a livelymetrics livelymetrics-dev
+    $ cd livelymetrics && add2virtualenv `pwd`
 
 Windows
 ----------
@@ -53,13 +52,13 @@ you will need to add a python pathfile named `_virtualenv_path_extensions.pth`
 to the `site-packages`. If you have been following the book, then your
 virtualenv folder will be something like::
 
-`~/.virtualenvs/icecream/lib/python2.7/site-directory/`
+`~/.virtualenvs/livelymetrics/lib/python2.7/site-directory/`
 
 In the pathfile, you will want to include the following code (from
 virtualenvwrapper):
 
     import sys; sys.__plen = len(sys.path)
-    /home/<youruser>/icecream/icecream/
+    /home/<youruser>/livelymetrics/livelymetrics/
     import sys; new=sys.path[sys.__plen:]; del sys.path[sys.__plen:]; p=getattr(sys,'__egginsert',0); sys.path[p:p]=new; sys.__egginsert = p+len(new)
 
 Installing Django
